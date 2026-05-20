@@ -11,11 +11,11 @@ spec:
   ingressClassName: external-nginx
   tls:
   - hosts:
-    - bankapi.teamcloudup.online  # bankend url
-    - bank.teamcloudup.online     # frontend url
-    secretName: bank-teamcloudup-online
+    - bankapi.aceglobalpod.online  
+    - bank.aceglobalpod.online     
+    secretName: bank-aceglobalpod-online
   rules:
-  - host: bank.teamcloudup.online
+  - host: bank.aceglobalpod.online
     http:
       paths:
       - path: /
@@ -25,7 +25,7 @@ spec:
             name: bank-frontend-service
             port:
               number: 3000
-  - host: bankapi.teamcloudup.online
+  - host: bankapi.aceglobalpod.online
     http:
       paths:
       - path: /
