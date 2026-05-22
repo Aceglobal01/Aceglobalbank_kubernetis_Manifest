@@ -5,5 +5,5 @@ metadata:
 data:
   DB_HOST: "staging-mysql-db.cncc8o8a48qh.us-west-1.rds.amazonaws.com"
   DB_PORT: "3306"
-  DB_NAME: "online_banking_system"
+  DB_NAME: "production_db"
   REACT_APP_API_URL: http://backend-service:8080
