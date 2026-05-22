@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bank-backend-deployment
+      app: bank-backend
   template:
     metadata:
       labels:
-        app: bank-backend-deployment
+        app: bank-backend
     spec:
       containers:
       - name: bank-backend-container
